@@ -1,0 +1,10 @@
+UIRect AnchorPoint NGUITools
+
+GetSides函数不是很明白用法???
+
+OnEnable
+OnInit
+OnDisable
+
+Update, rectangles 更新顺序：父节点更新完毕后再更新子节点,疑惑在于 Update函数里面明显是子节点的rect先更新再调用了父节点
+的更新函数(OnUpdate)
