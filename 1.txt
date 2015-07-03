@@ -8,3 +8,19 @@ OnDisable
 
 Update, rectangles 更新顺序：父节点更新完毕后再更新子节点,疑惑在于 Update函数里面明显是子节点的rect先更新再调用了父节点
 的更新函数(OnUpdate)
+
+UIPanel http://www.tasharen.com/forum/index.php?topic=6705
+最好保证面板不要共用同样的深度值，为了保证绘制顺序可能导致dc的增加   问题原因?
+UI被灯光影响，检查Normals的选择项   同样原理为何？
+
+关于Scrollable panel，剔除选项能减少绘制的几何图形数量，但是会降低性能(每一帧都要检查widget的可见性)
+
+clip原理
+
+default drawing render queue is 3000 and go up from there.
+
+UICamera
+EventType 决定了排序
+Tooltip Delay???
+
+UIRoot
